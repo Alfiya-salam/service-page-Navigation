@@ -1,0 +1,84 @@
+
+.homepage {
+    text-align: center;
+    padding: 40px;
+  }
+  
+  .homepage h1 {
+    font-size: 56px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .homepage-intro {
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: #241919;
+  }
+  
+  /* Grid Layout for the Service Boxes */
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    gap: 20px;
+    justify-content: center;
+    align-items: stretch;
+  }
+  
+  /* Service Box Styling */
+  .service-box {
+    border: 2px solid #ccc;
+    padding: 40px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service-box:hover {
+    transform: scale(1.05);
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Title Styling */
+  .service-box h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  /* Description Styling */
+  .service-box p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+  }
+  /* Remove underline from links */
+.service-box a {
+    text-decoration: none; /* This removes the underline */
+    color: inherit; /* Keeps the text color same as parent */
+  }
+  
+  /* Responsive Design for Smaller Screens */
+  @media (max-width: 768px) {
+    .services-grid {
+      grid-template-columns: repeat(2, 1fr); /* Two columns on smaller screens */
+    }
+  
+    .service-box {
+      padding: 30px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .services-grid {
+      grid-template-columns: repeat(1, 1fr); /* One column on mobile screens */
+    }
+  
+    .service-box {
+      padding: 20px;
+    }
+  }
+  
